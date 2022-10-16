@@ -1,46 +1,68 @@
 # matheowz.github.io
-deja de pelear o me emputo
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-  <style>
-   
-  
-a{  
-   display: block;
-   width: 30px;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 500;
-   background-color: rgb(0, 0, 0);
-   border-radius: 20px;
-padding: 15px 30px;
-margin: 150px 40px;
-color: rgb(255, 0, 0);
- text-decoration: none;  
-
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
- a:hover {
-      background-color: transparent;
-      border: 2px solid rgb(0, 0, 0);
-      color: rgb(rgb(131, 16, 238), rgb(187, 255, 0), blue);   
- } 
- 
-   </style>
-        
- 
-</head>
-<body>
 
-    </div class="contenido"> 
+body{
+	background: #313D52;
+}
 
-    <h1></h1>
-    <a style="float: center;" href="https://www.facebook.com/matheo.tamara.16" target="_blank">Link</a>
+header{
+	width: 100%;
+}
 
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+	background: #fff;
+}
 
-</body>
-</html> 
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
