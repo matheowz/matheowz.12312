@@ -1,68 +1,32 @@
-# matheowz.github.io
-*{
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
+n1 = float(input("Introduce tu primer número: ") )
+n2 = float(input("Introduce tu segundo número: ") )
 
-body{
-	background: #313D52;
-}
+opcion = 0
+while True:
+    print("""
+    Dime, ¿qué quieres hacer?
+    
+    1) Sumar los dos números
+    2) Restar los dos números
+    3) Multiplicar los dos números
+    4) Cambiar los números elegidos
+    5) Apagar calculadora
+    """)
+    opcion = int(input("Elige una opción: ") )     
 
-header{
-	width: 100%;
-}
-
-.navegacion{
-	width: 1000px;
-	margin: 30px auto;
-	background: #fff;
-}
-
-.navegacion ul{
-	list-style: none;
-}
-
-.menu > li{
-	position: relative;
-	display: inline-block;
-}
-
-.menu > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: #353535;
-	font-family: 'Open sans';
-	text-decoration: none;
-}
-
-.menu li a:hover{
-	color: #CE7D35;
-	transition: all .3s;
-}
-
-/* Submenu*/
-
-.submenu{
-	position: absolute;
-	background: #333333;
-	width: 120%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
-}
-
-.submenu li a{
-	display: block;
-	padding: 15px;
-	color: #fff;
-	font-family: 'Open sans';
-	text-decoration: none;
-}
-
-.menu li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
-}
+    if opcion == 1:
+        print(" ")
+        print("RESULTADO: La suma de",n1,"+",n2,"es igual a",n1+n2)
+    elif opcion == 2:
+        print(" ")
+        print("RESULTADO: La resta de",n1,"-",n2,"es igual a",n1-n2)
+    elif opcion == 3:
+        print(" ")
+        print("RESULTADO: El producto de",n1,"*",n2,"es igual a",n1*n2)
+    elif opcion == 4:
+        n1 = float(input("Introduce tu primer número: ") )
+        n2 = float(input("Introduce tu segundo número: ") )
+    elif opcion == 5:
+        break
+    else:
+        print("Opción incorrecta")
